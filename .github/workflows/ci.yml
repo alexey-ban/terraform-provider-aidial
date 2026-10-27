@@ -42,7 +42,7 @@ jobs:
           terraform_wrapper: false
       - name: terraform fmt
         run: terraform fmt -check -recursive
-      - uses: DavidAnson/markdownlint-cli2-action@v19
+      - uses: DavidAnson/markdownlint-cli2-action@v24
 
   test:
     runs-on: ubuntu-latest
