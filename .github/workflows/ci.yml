@@ -193,7 +193,7 @@ jobs:
           terraform destroy -auto-approve -var-file=terraform.tfvars.json
       - name: Upload Terraform state
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: integration-state
           path: |
